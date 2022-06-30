@@ -1,0 +1,484 @@
+
+nav{
+    background-color: unset !important;
+    border: unset !important;
+}
+nav + div > div:first-child {
+    visibility: hidden;
+ }
+
+ nav button{
+    border-color: #60a5fa;
+    color: white;
+    display: flex;
+    background: linear-gradient(90deg,#cc567f,#394b5a);
+    transition: all .3s ease-in-out;
+    font-weight: 600;
+    border-radius: 100px;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    line-height: 1.5rem;
+    cursor: pointer;
+    margin: 5px;
+    border-width: 0px;
+    font-weight: 600;
+    border-radius: 100px !important;
+    padding: 22.5px !important;
+}
+nav svg{
+    display: none !important;
+}
+#swap-page {
+    background-color: #1b0915;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #D15480;
+    border-radius: 30px;
+}
+
+#swap-page div {
+    color: white !important;
+}
+#swap-page h2 {
+    color: white !important;
+}
+
+#swap-page > div:last-child > div:first-child {
+    display: unset;
+    grid-auto-rows: unset;
+}
+
+#swap-page > div:last-child > div:first-child > div:nth-child(2) > div:first-child{
+    margin-top: -15px;
+    margin-bottom: -15px;
+    z-index: 10;
+}
+
+#swap-page > div:last-child > div:first-child > div:nth-child(2) > div:first-child button {
+    width: 48px;
+    height:48px;
+    color: white;
+    background: linear-gradient(90deg,#cc567f,#394b5a);
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+    margin: 5px;
+    font-weight: 600;
+    padding: 22.5px !important;
+}
+
+#swap-page > div:last-child > div:first-child > div:nth-child(2) > div:first-child button:not(:active) {
+    box-shadow: none;
+}
+
+#swap-button, #join-pool-button, #liquidity-page > div:nth-child(2) > div > div > div:last-child > button,
+#swap-page > div:nth-child(2) > div:nth-child(2) > button {
+    border-radius: 100px !important;
+}
+
+#swap-button:not([disabled]), #join-pool-button:not([disabled]),
+ #liquidity-page > div:nth-child(2) > div > div > button:not([disabled]),
+ #swap-page > div:nth-child(2) > div:nth-child(2) > button:not([disabled]) {
+    border-color: #60a5fa;
+    color: white;
+    display: flex;
+    background: linear-gradient(90deg,#cc567f,#394b5a);
+    transition: all .3s ease-in-out;
+    font-weight: 600;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    line-height: 1.5rem;
+    cursor: pointer;
+    margin: 5px;
+    border-width: 0px;
+    font-weight: 600;
+    padding: 22.5px !important;
+}
+
+#swap-currency-input > div:first-child, #swap-currency-output > div:first-child {
+    background-color:black;
+}
+
+#swap-currency-input > div:first-child > div:last-child {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+#swap-currency-input > div:first-child > div:last-child > div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#swap-currency-input > div:first-child > div:last-child > div > input {
+    flex: unset;
+    width: 100%;
+    text-align: right;
+    color: white;
+    background-color: #101111;
+    height: 55px;
+    border-radius: 16px;
+    padding-right: 10px;
+}
+
+#swap-currency-input > div:first-child > div:last-child > div > input:nth-child(2) {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+#swap-currency-input > div:first-child > div:last-child > div > button {
+    color: white;
+    background-color: #101111;
+    height: 55px;
+    border-radius: 16px;
+    padding-right: 10px;
+    max-width: 100px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+#swap-currency-input > div:first-child > div:last-child > div > button:focus:not(:active) {
+    box-shadow: none;
+}
+
+#swap-currency-input > div:first-child > div:last-child > div > button:active {
+    color: #D15480;
+}
+
+#swap-currency-output > div:first-child > div:last-child {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+#swap-currency-output > div:first-child > div:last-child > div {
+    width: 100%;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+#swap-currency-output > div:first-child > div:last-child > div > input {
+    flex: unset;
+    width: 100%;
+    text-align: right;
+    color: white;
+    background-color: #101111;
+    height: 55px;
+    border-radius: 16px;
+    padding-right: 10px;
+    width: 100%;
+}
+
+#swap-currency-input > div:first-child > div:last-child > button, #swap-currency-output > div:first-child > div:last-child > button {
+    color: white;
+    background-color: #101111;
+    height: 55px;
+    border-radius: 16px;
+    padding-right: 10px;
+    min-width: 200px;
+    margin-right: 15px;
+}
+div[role="presentation"] + div {
+    background-color: #1b0915;
+    border: unset !important;
+}
+div[role="presentation"] + div > div:first-child {
+    border-style: solid;
+    border-width: 3px;
+    border-color: #D15480;
+    border-bottom: 1px solid #E9EAEB;
+    border-radius: 30px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+div[role="presentation"] + div > div:last-child {
+    border-style: solid;
+    border-width: 3px;
+    border-color: #D15480;
+    border-bottom: 1px solid #E9EAEB;
+    border-radius: 30px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-top: 0px;
+}
+div[role="presentation"] + div div {
+    color: white;
+}
+div[role="presentation"] + div h2 {
+    color: white;
+}
+div[role="presentation"] + div button {
+    background-color: black;
+}
+div[role="presentation"] + div button:hover {
+    background-color: #D15480 !important;
+}
+div[role="presentation"] + div button:focus {
+    background-color: #D15480 !important;
+}
+div[role="presentation"] + div input {
+    background-color: black;
+    color: white;
+    border: unset;
+    height: 50px;
+}
+div[role="dialog"] {
+    border: unset !important;
+}
+div[role="dialog"] > div:first-child > div:nth-child(2) {
+    display: none;
+}
+div[role="dialog"] > div:first-child > div:first-child > div:first-child span {
+    display: none;
+}
+div[role="dialog"] > div {
+    background-color: #1b0915;
+}
+div[role="dialog"] > div > div:first-child {
+    border-style: solid;
+    border-width: 3px;
+    border-color: #D15480;
+    border-bottom: 1px solid #E9EAEB;
+    border-radius: 20px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+div[role="dialog"] > div > div:last-child {
+    border-style: solid;
+    border-width: 3px;
+    border-color: #D15480;
+    border-bottom: 1px solid #E9EAEB;
+    border-radius: 20px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-top: 0px;
+}
+div[role="dialog"] > div div {
+    color: white;
+}
+div[role="dialog"] > div h2 {
+    color: white;
+}
+div[role="dialog"] > div button {
+    background-color: black;
+}
+div[role="dialog"] > div button:hover {
+    background-color: #D15480 !important;
+}
+div[role="dialog"] > div button:focus {
+    background-color: #D15480 !important;
+}
+div[role="dialog"] > div input {
+    background-color: #101111;
+    color: white;
+    border: unset;
+    height: 50px;
+}
+div[role="dialog"] > div > div:last-child > div:first-child > div:first-child > div:first-child > div:hover {
+    background-color: black;
+}
+div[role="dialog"] #token-search-input + div {
+    display:none;
+}
+/* ----------- Liquidity -S--------------*/
+/* nav + div > div:nth-child(2) > div > div:nth-child(4) */
+nav + div > div:nth-child(2) > div > div:nth-child(4) {
+    overflow: visible;
+}
+
+#pool-page {
+    background-color: #1b0915;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #D15480;
+    border-radius: 30px;
+}
+
+#pool-page div{
+    color: white;
+}
+
+#pool-page h2{
+    color: white;
+}
+
+#liquidity-page {
+    background-color: #1b0915;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #D15480;
+    border-radius: 30px;
+}
+
+#add-liquidity-input-tokena > div:first-child > div:last-child > button {
+    color: white;
+    background-color: #101111;
+    height: 55px;
+    border-radius: 16px;
+    padding-right: 10px;
+    min-width: 200px;
+    margin-right: 15px;
+}
+
+#add-liquidity-input-tokena > div:first-child > div:last-child > div > button {
+    color: white;
+    background-color: #101111;
+    height: 55px;
+    border-radius: 16px;
+    padding-right: 10px;
+    max-width: 100px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+
+#add-liquidity-input-tokena > div:first-child > div:last-child > div > button:focus:not(:active) {
+    box-shadow: none;
+}
+
+#add-liquidity-input-tokena > div:first-child > div:last-child > div > div > button:active {
+    color: #D15480;
+}
+
+#add-liquidity-input-tokena > div:first-child {
+    background-color:black;
+}
+
+#add-liquidity-input-tokena > div:first-child > div:last-child {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+#add-liquidity-input-tokena > div:first-child > div:last-child > div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#add-liquidity-input-tokena > div:first-child > div:last-child > div > input {
+    flex: unset;
+    width: 100%;
+    text-align: right;
+    color: white;
+    background-color: #101111;
+    height: 55px;
+    border-radius: 16px;
+    padding-right: 10px;
+}
+
+#add-liquidity-input-tokena > div:first-child > div:last-child > div > input:nth-child(2) {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+#add-liquidity-input-tokenb > div:first-child {
+    background-color:black;
+}
+
+#add-liquidity-input-tokenb > div:first-child > div:last-child {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+#add-liquidity-input-tokenb > div:first-child > div:last-child > div {
+    width: 100%;
+}
+
+#add-liquidity-input-tokenb> div:first-child > div:last-child > div > input {
+    flex: unset;
+    width: 100%;
+    text-align: right;
+    color: white;
+    background-color: #101111;
+    height: 55px;
+    border-radius: 16px;
+    padding-right: 10px;
+}
+
+#add-liquidity-input-tokenb > div:first-child > div:last-child > button {
+    color: white;
+    background-color: #101111;
+    height: 55px;
+    border-radius: 16px;
+    padding-right: 10px;
+    min-width: 200px;
+    margin-right: 15px;
+}
+
+/* @media css for currency input panel */
+@media (max-width: 640px)
+{
+    #swap-currency-input > div:first-child > div:last-child {
+        flex-direction: column-reverse;
+    }
+
+    #swap-currency-input > div:first-child > div:last-child > div {
+        display: flex;
+        flex-direction: row;
+        padding-top: 10px;
+        width: 100%;
+    }
+
+    #swap-currency-input > div:first-child > div:last-child > div > input {
+        width: 100%;
+    }
+
+    #swap-currency-output > div:first-child > div:last-child {
+        flex-direction: column-reverse;
+    }
+
+    #swap-currency-output > div:first-child > div:last-child > div {
+        padding-top: 10px;
+        width: 100%;
+    }
+
+    #swap-currency-input > div:first-child > div:last-child > button, #swap-currency-output > div:first-child > div:last-child > button {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    #add-liquidity-input-tokena > div:first-child > div:last-child {
+        flex-direction: column-reverse;
+    }
+
+    #add-liquidity-input-tokena > div:first-child > div:last-child > div {
+        display: flex;
+        flex-direction: row;
+        padding-top: 10px;
+        width: 100%;
+    }
+
+    #add-liquidity-input-tokena > div:first-child > div:last-child > div > input {
+        width: 100%;
+    }
+
+    #add-liquidity-input-tokenb > div:first-child > div:last-child {
+        flex-direction: column-reverse;
+    }
+
+    #add-liquidity-input-tokenb > div:first-child > div:last-child > div {
+        padding-top: 10px;
+        width: 100%;
+    }
+
+    #add-liquidity-input-tokenb> div:first-child > div:last-child > div > input {
+        width: 100%;
+    }
+
+    #add-liquidity-input-tokena > div:first-child > div:last-child > button, #add-liquidity-input-tokenb > div:first-child > div:last-child > button {
+        width: 100%;
+        margin-right: 0;
+    }
+}
+
+/* Menu active */
+.active-menu {
+    border-left: 4px solid #D15480;
+    background-color: #4D193C;
+}
